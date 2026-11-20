@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Finalizar compra · RL iPhones</title>
+  <meta name="description" content="Dados, entrega e pagamento do seu pedido na RL iPhones.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:title" content="Finalizar compra · RL iPhones">
+  <meta property="og:description" content="Dados, entrega e pagamento do seu pedido na RL iPhones.">
+  <meta property="og:image" content="assets/img/og-image-1200x630.png">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon-180.png">
+  <link rel="stylesheet" href="css/fontes.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/componentes.css">
+  <link rel="stylesheet" href="css/paginas.css">
+</head>
+<body class="pg-checkout">
+  <div id="cabecalho"></div>
+
+  <main id="conteudo" class="wrap checkout">
+    <h1 class="t-1">Finalizar compra</h1>
+    <ol class="etapas" data-etapas aria-label="Etapas">
+      <li><span>1. Seus dados</span></li><li><span>2. Entrega</span></li><li><span>3. Pagamento</span></li><li><span>4. Revisão</span></li>
+    </ol>
+    <div class="checkout__corpo" data-corpo>
+      <form class="checkout__form" data-form novalidate>
+        <section class="etapa" data-etapa="1" aria-labelledby="e1"><div class="etapa__topo"><h2 id="e1">Seus dados</h2></div><div data-conteudo></div></section>
+        <section class="etapa" data-etapa="2" aria-labelledby="e2"><div class="etapa__topo"><h2 id="e2">Entrega</h2></div><div data-conteudo></div></section>
+        <section class="etapa" data-etapa="3" aria-labelledby="e3"><div class="etapa__topo"><h2 id="e3">Pagamento</h2></div><div data-conteudo></div></section>
+        <section class="etapa" data-etapa="4" aria-labelledby="e4"><div class="etapa__topo"><h2 id="e4">Revisão</h2></div><div data-conteudo></div></section>
+      </form>
+      <aside class="resumo" aria-label="Resumo do pedido" data-resumo></aside>
+    </div>
+  </main>
+
+  <div id="rodape"></div>
+
+  <script src="js/config.js"></script>
+  <script src="data/modelos.js"></script>
+  <script src="data/estoque.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/catalogo.js"></script>
+  <script src="js/sacola.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/checkout.js"></script>
+  <script src="js/movimento.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/paginas/checkout.js"></script>
+</body>
+</html>

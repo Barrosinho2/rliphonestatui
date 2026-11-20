@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Produtos · RL iPhones</title>
+  <meta name="description" content="Todos os aparelhos em estoque na RL iPhones, com filtros por modelo, cor, armazenamento, garantia, bateria e preço.">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:title" content="Produtos · RL iPhones">
+  <meta property="og:description" content="Todos os aparelhos em estoque na RL iPhones, com filtros por modelo, cor, armazenamento, garantia, bateria e preço.">
+  <meta property="og:image" content="assets/img/og-image-1200x630.png">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon-180.png">
+  <link rel="stylesheet" href="css/fontes.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/componentes.css">
+  <link rel="stylesheet" href="css/paginas.css">
+</head>
+<body class="pg-categoria">
+  <div id="cabecalho"></div>
+
+  <main id="conteudo" class="plp">
+    <div class="wrap plp__topo">
+      <nav class="trilha" aria-label="Você está em" data-trilha></nav>
+      <div class="plp__titulo">
+        <h1 class="t-1" data-titulo>Produtos</h1>
+        <p class="plp__conta" data-conta aria-live="polite"></p>
+      </div>
+      <div class="plp__atalhos" data-atalhos></div>
+    </div>
+
+    <div class="wrap plp__corpo">
+      <aside class="filtros" data-filtros aria-label="Filtros">
+        <div class="filtros__topo"><h2>Filtros</h2><button class="gaveta__fechar" type="button" data-fecha-filtros aria-label="Fechar filtros"></button></div>
+        <div class="filtros__corpo" data-filtros-corpo></div>
+        <div class="filtros__rodape"><button class="btn btn--cinza" type="button" data-limpar>Limpar</button><button class="btn" type="button" data-fecha-filtros data-ver></button></div>
+      </aside>
+
+      <section class="plp__lista" aria-label="Resultados">
+        <div class="plp__barra">
+          <button class="btn btn--cinza btn--p plp__filtrar" type="button" data-abre-filtros><span data-ico-filtro></span>Filtrar<b data-n-filtros></b></button>
+          <div class="plp__chips" data-chips></div>
+          <label class="plp__ordem"><span>Ordenar por</span>
+            <select class="entrada" data-ordem>
+              <option value="relevancia">Relevância</option>
+              <option value="menor-preco">Menor preço</option>
+              <option value="maior-preco">Maior preço</option>
+              <option value="mais-novos">Mais novos</option>
+              <option value="maior-bateria">Maior bateria</option>
+            </select>
+          </label>
+        </div>
+        <div class="grade" data-grade></div>
+      </section>
+    </div>
+  </main>
+  <div class="gaveta-fundo" data-filtros-fundo></div>
+
+  <div id="rodape"></div>
+
+  <script src="js/config.js"></script>
+  <script src="data/modelos.js"></script>
+  <script src="data/estoque.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/catalogo.js"></script>
+  <script src="js/sacola.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/checkout.js"></script>
+  <script src="js/movimento.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/paginas/categoria.js"></script>
+</body>
+</html>

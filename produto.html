@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Produto · RL iPhones</title>
+  <meta name="description" content="Escolha cor, armazenamento e o aparelho pela saúde da bateria. Lacrados e seminovos com garantia na RL iPhones.">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:title" content="Produto · RL iPhones">
+  <meta property="og:description" content="Escolha cor, armazenamento e o aparelho pela saúde da bateria. Lacrados e seminovos com garantia na RL iPhones.">
+  <meta property="og:image" content="assets/img/og-image-1200x630.png">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon-180.png">
+  <link rel="stylesheet" href="css/fontes.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/componentes.css">
+  <link rel="stylesheet" href="css/paginas.css">
+</head>
+<body class="pg-produto">
+  <div id="cabecalho"></div>
+
+  <main id="conteudo" class="pdp">
+    <div class="wrap pdp__topo"><nav class="trilha" aria-label="Você está em" data-trilha></nav></div>
+
+    <div class="wrap pdp__corpo" data-produto>
+      <section class="galeria" aria-label="Fotos do produto">
+        <div class="galeria__palco" data-palco>
+          <div class="galeria__img" data-galeria-img></div>
+          <p class="galeria__dica" data-dica>Passe o mouse para ampliar</p>
+        </div>
+        <div class="galeria__vistas" data-vistas role="tablist" aria-label="Vistas"></div>
+      </section>
+
+      <section class="compra" aria-label="Comprar">
+        <p class="compra__selos" data-selos></p>
+        <h1 class="compra__titulo" data-titulo>Produto</h1>
+        <p class="compra__sub" data-compra-sub></p>
+        <div class="compra__preco" data-preco aria-live="polite"></div>
+
+        <div class="bloco" data-bloco="cond"></div>
+        <div class="bloco" data-bloco="cor"></div>
+        <div class="bloco" data-bloco="arm"></div>
+        <div class="bloco" data-bloco="unidade"></div>
+
+        <div class="compra__acoes" data-acoes>
+          <button class="btn btn--bloco" type="button" data-add>Adicionar à sacola</button>
+          <button class="btn btn--bloco btn--linha" type="button" data-comprar>Comprar agora</button>
+        </div>
+        <p class="compra__whats"><a class="link" data-whats-produto href="#">Prefere comprar pelo WhatsApp? Fale com um vendedor</a></p>
+
+        <ul class="compra__info" data-info></ul>
+      </section>
+    </div>
+
+    <section class="wrap pdp__detalhes" aria-label="Detalhes do produto">
+      <div class="pdp__abas"><div class="abas" role="tablist" data-abas>
+        <button type="button" role="tab" aria-selected="true" data-aba="visao">Visão geral</button>
+        <button type="button" role="tab" aria-selected="false" data-aba="specs">Especificações</button>
+        <button type="button" role="tab" aria-selected="false" data-aba="garantia">Garantia e condição</button>
+        <button type="button" role="tab" aria-selected="false" data-aba="pagamento">Pagamento</button>
+      </div></div>
+      <div class="pdp__painel" data-painel="visao"></div>
+      <div class="pdp__painel" data-painel="specs" hidden></div>
+      <div class="pdp__painel" data-painel="garantia" hidden></div>
+      <div class="pdp__painel" data-painel="pagamento" hidden></div>
+    </section>
+
+    <section class="secao secao--cinza" aria-labelledby="t-relacionados" data-relacionados-secao>
+      <div class="wrap secao__topo"><h2 class="titulo-vitrine" id="t-relacionados"><b>Você também pode gostar.</b> Outros modelos no estoque.</h2></div>
+      <div class="prateleira"><div class="prateleira__trilho" data-relacionados></div></div>
+    </section>
+  </main>
+
+  <div class="barra-compra" data-barra aria-hidden="true">
+    <div class="wrap barra-compra__dentro">
+      <div class="barra-compra__nome"><img data-barra-img alt=""><span><b data-barra-nome></b><small data-barra-det></small></span></div>
+      <div class="barra-compra__lado"><span class="barra-compra__preco" data-barra-preco></span><button class="btn btn--p" type="button" data-barra-add>Adicionar à sacola</button></div>
+    </div>
+  </div>
+
+  <div id="rodape"></div>
+
+  <script src="js/config.js"></script>
+  <script src="data/modelos.js"></script>
+  <script src="data/estoque.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/catalogo.js"></script>
+  <script src="js/sacola.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/checkout.js"></script>
+  <script src="js/movimento.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/paginas/produto.js"></script>
+</body>
+</html>
